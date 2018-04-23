@@ -15,7 +15,7 @@ import sys
 import sqlite3
 # replace slacker with my own postMessage function
 def post_sqlite(time, type, event, responder, area, address):
-    conn = sqlite3.connect('/home/dc423/HC911-Data/hc911.db')
+    conn = sqlite3.connect('hc911.db')
     c = conn.cursor()
     c.execute('INSERT INTO events (time, type, event, responder, area, address) VALUES (?,?,?,?,?,?)', (time, type, event, responder, area, address))
     conn.commit()
