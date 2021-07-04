@@ -25,14 +25,14 @@ def graph_data():
         
     # Create and build the Graph 
     ax = plt.subplot(111)
-    # Set Y label and the Title 
-    ax.set(ylabel='Count by Types', title='Top 10 Counts by HC911 Type')
-    # set the x ticks to be numbers based on the types 
-    ax.set_xticks(np.arange(len(types)))
-    # set the x axis lables to be the types 
-    ax.set_xticklabels(types)
+    # Set x label and the Title 
+    ax.set(xlabel='Count by Types', title='Top 10 Counts by HC911 Type')
+    # set the y ticks to be numbers based on the types 
+    ax.set_yticks(np.arange(len(types)))
+    # set the y axis lables to be the types 
+    ax.set_yticklabels(types)
     # create the graph based off the x and y values from the database
-    ax.bar(np.arange(len(types)), counts)
+    ax.barh(np.arange(len(types)), counts)
     # show the graph
     plt.show()
 
