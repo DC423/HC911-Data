@@ -2,27 +2,19 @@
 
 HC911-Data is a Python-based project that captures and stores data from HC911 in a SQLite database, facilitating long-term data storage, querying, and analysis. Initially created to integrate data for Slack feeds, this project now emphasizes robust data handling and storage solutions.
 
-## Table of Contents
-
-	•	Overview
-	•	Features
-	•	Getting Started
-	•	Usage
-	•	Contributing
-	•	License
 
 ## Overview
 
 The HC911-Data project is part of DC423’s efforts to maintain and analyze HC911 information in a structured database, aiming to:
-	•	Collect and store incoming HC911 data in a SQLite database.
-	•	Enable data visualization and reporting via integrated scripts.
-	•	Offer an extendable codebase for additional data integrations and outputs.
+- Collect and store incoming HC911 data in a SQLite database.
+- Enable data visualization and reporting via integrated scripts.
+- Offer an extendable codebase for additional data integrations and outputs.
 
 ## Features
 
-	•	Data Storage: Stores HC911 data in a SQLite database (hc911.db).
-	•	Graphing Utilities: Scripts for data visualization by date and type (graph_date.py, graph_types.py).
-	•	Modular Design: Easily add or modify data processing functions.
+- Data Storage: Stores HC911 data in a SQLite database (hc911.db).
+- Graphing Utilities: Scripts for data visualization by date and type (graph_date.py, graph_types.py).
+- Modular Design: Easily add or modify data processing functions.
 
 ## Getting Started
 
