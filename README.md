@@ -42,7 +42,7 @@ cd HC911-Data
 # Install Dependencies:
 
 ```
-fill in with what you'll need, likely sqlite3
+pip install sqlite3
 ```
 
 
