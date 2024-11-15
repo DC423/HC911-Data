@@ -1,2 +1,66 @@
 # HC911-Data
-This project is started as a DC423 team project. The purpose is to take the script that is being used to feed infromation into slack, and then store in a Database (SQLite for the time being). If you would like to participate find us on slack, and ask to join the group. 
+
+HC911-Data is a Python-based project that captures and stores data from HC911 in a SQLite database, facilitating long-term data storage, querying, and analysis. Initially created to integrate data for Slack feeds, this project now emphasizes robust data handling and storage solutions.
+
+## Table of Contents
+
+	•	Overview
+	•	Features
+	•	Getting Started
+	•	Usage
+	•	Contributing
+	•	License
+
+## Overview
+
+The HC911-Data project is part of DC423’s efforts to maintain and analyze HC911 information in a structured database, aiming to:
+	•	Collect and store incoming HC911 data in a SQLite database.
+	•	Enable data visualization and reporting via integrated scripts.
+	•	Offer an extendable codebase for additional data integrations and outputs.
+
+## Features
+
+	•	Data Storage: Stores HC911 data in a SQLite database (hc911.db).
+	•	Graphing Utilities: Scripts for data visualization by date and type (graph_date.py, graph_types.py).
+	•	Modular Design: Easily add or modify data processing functions.
+
+## Getting Started
+
+# Prerequisites
+
+	•	Python 3.x
+	•	SQLite3
+
+## Installation
+
+# Clone the repository:
+```
+git clone https://github.com/DC423/HC911-Data.git
+cd HC911-Data
+```
+
+# Install Dependencies:
+
+```
+fill in with what you'll need, likely sqlite3
+```
+
+
+# Run Data Scripts (Optional for Testing):
+	•	Data Ingestion: python hc911_data.py
+	•	Visualization: python graph_date.py or python graph_types.py
+
+## Usage
+
+After running hc911_data.py, data is stored in hc911.db. You'll want to set up a cron job to run every minute to get the new data. To visualize or analyze data, use the graphing scripts provided:
+	•	Date-based Graphing: python graph_date.py
+	•	Type-based Graphing: python graph_types.py
+
+## Contributing
+
+We welcome contributions! Connect with us on Slack, fork the repo, create a branch, and submit a PR.
+
+## License
+
+This project is licensed under the MIT License.
+
