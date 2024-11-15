@@ -47,14 +47,21 @@ pip install sqlite3
 
 
 # Run Data Scripts (Optional for Testing):
-	•	Data Ingestion: python hc911_data.py
-	•	Visualization: python graph_date.py or python graph_types.py
+- Data Ingestion: python hc911_data.py
+- Visualization: python graph_date.py or python graph_types.py
 
 ## Usage
 
-After running hc911_data.py, data is stored in hc911.db. You'll want to set up a cron job to run every minute to get the new data. To visualize or analyze data, use the graphing scripts provided:
-	•	Date-based Graphing: python graph_date.py
-	•	Type-based Graphing: python graph_types.py
+### After running hc911_data.py, data is stored in hc911.db. You'll want to set up a cron job to run every minute to get the new data. Here is an example cron tab to run on a RaspberryPi
+```
+* * * * * /usr/bin/python3 /home/pi/HC911-Data/hc911_data.py
+```
+
+
+### To visualize or analyze data, use the graphing scripts provided:
+
+- Date-based Graphing: python graph_date.py
+- Type-based Graphing: python graph_types.py
 
 ## Contributing
 
