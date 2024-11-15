@@ -8,7 +8,6 @@
 #         (11/15/2024) merged with the slack tools one that has the new URL
 #
 ########################################
-#!/usr/bin/python
 from pprint import pprint
 from time import strftime
 import requests
