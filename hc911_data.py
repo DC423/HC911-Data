@@ -21,7 +21,7 @@ import sqlite3
 
 # also post to sqllite.db 
 def post_sqlite(time, type, event, responder, area, address):
-    conn = sqlite3.connect('LOCATION TO DB')
+    conn = sqlite3.connect('hc911.db')
     c = conn.cursor()
     c.execute('INSERT INTO events (time, type, event, responder, area, address) VALUES (?,?,?,?,?,?)', (time, type, event, responder, area, address))
     conn.commit()
