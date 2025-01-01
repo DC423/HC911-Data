@@ -20,7 +20,8 @@ def graph_unique_data(date_filter=None, use_pie_chart=False):
         try:
             input_date = datetime.datetime.strptime(date_filter, "%Y-%m-%d")
             date_start = input_date.strftime("%Y-%m-%d 00:00:00")
-            date_end = (input_date + datetime.timedelta(days=1)).strftime("%Y-%m-%d 00:00:00")
+            date_end = input_date.strftime("%Y-12-23 23:59:59")
+            #date_end = (input_date + datetime.timedelta(days=1)).strftime("%Y-%m-%d 00:00:00")
             print(f"Querying data for the date {date_filter}.")
         except ValueError:
             print("Invalid date format. Please use YYYY-MM-DD.")
