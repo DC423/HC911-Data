@@ -1,4 +1,3 @@
-#!/usr/bin/python
 #
 #  Author: Ben Stoker
 #  Original Author: Stephen Hilt
@@ -7,6 +6,8 @@
 #  Notes: (4/19/2018) Initial Build
 #         (11/15/2024) merged with the slack tools one that has the new URL
 #         (12/03/2024) Updated to include additional fields from the API response
+#         (02/04/2025) Added custom headers (Content-Type, X-Frontend-Auth, Origin) 
+#                      to match the JavaScript fetch request for API security and CORS compliance
 #
 ########################################
 from pprint import pprint
