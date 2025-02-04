@@ -40,7 +40,16 @@ def listToString(s):
 
 # URL and API Setup
 url = "https://hc911server.com/api/calls"
-response = requests.get(url)
+
+# ✅ Add Custom Headers (Matching the JavaScript Fetch Request)
+headers = {
+    "Content-Type": "application/json",
+    "X-Frontend-Auth": "my-secure-token",  # Required for security
+    "Origin": "https://www.hamiltontn911.gov"  # Helps with CORS and verification
+}
+
+# Make the GET request with headers
+response = requests.get(url, headers=headers)
 
 # Get the current time in 24-hour format
 hour = strftime("%H")
