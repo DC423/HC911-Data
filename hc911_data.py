@@ -41,7 +41,7 @@ def listToString(s):
 # URL and API Setup
 url = "https://hc911server.com/api/calls"
 
-# ✅ Add Custom Headers (Matching the JavaScript Fetch Request)
+# Add Custom Headers (Matching the JavaScript Fetch Request)
 headers = {
     "Content-Type": "application/json",
     "X-Frontend-Auth": "my-secure-token",  # Required for security
