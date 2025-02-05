@@ -46,7 +46,8 @@ url = "https://hc911server.com/api/calls"
 headers = {
     "Content-Type": "application/json",
     "X-Frontend-Auth": "my-secure-token",  # Required for security
-    "Origin": "https://www.hamiltontn911.gov"  # Helps with CORS and verification
+    "Origin": "https://www.hamiltontn911.gov",  # Helps with CORS and verification
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.60"
 }
 
 # Make the GET request with headers
